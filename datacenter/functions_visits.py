@@ -17,5 +17,4 @@ def format_duration(duration):
 
 def is_visit_long(visit, minutes=60):
     duration = get_duration(visit)//60
-    res_suspect = duration > minutes
-    return res_suspect
+    return duration > minutes
