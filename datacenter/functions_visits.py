@@ -4,9 +4,9 @@ import time
 
 def get_duration(visit):
     if not visit.leaved_at:
-        duration = timezone.now()-visit.entered_at
+        duration = timezone.now() - visit.entered_at
         return duration.total_seconds()
-    duration = visit.leaved_at-visit.entered_at
+    duration = visit.leaved_at - visit.entered_at
     return duration.total_seconds()
 
 
